@@ -40,11 +40,11 @@ export default async function TagPosts({ params }: { params: Promise<{ tag: stri
         <Search />
       </div>
       <ul className="pb-4 sm:pb-0 text-white flex flex-row overflow-x-scroll sm:overflow-x-visible gap-x-3 sm:gap-x-0 sm:flex-col gap-y-3.5 sm:max-w-[120px]">
-        <div className="hidden sm:block">
+        <div role="listitem" className="hidden sm:block">
           <Search />
         </div>
         <Tags />
-        <div className="hidden sm:block mt-4 pt-4 border-t border-gray-800">
+        <div role="listitem" className="hidden sm:block mt-4 pt-4 border-t border-gray-800">
           <Socials />
         </div>
       </ul>
