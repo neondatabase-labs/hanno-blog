@@ -5,12 +5,13 @@ import Tags from '@/components/tags'
 import config from '@/lib/config'
 import { allBlogs } from 'content-collections'
 import 'core-js/features/array/to-sorted'
+import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
 const getFilteredPosts = (tag: string) =>
   (tag === 'all' ? allBlogs : allBlogs.filter((blog) => blog.tag.toLowerCase().includes(tag.toLowerCase()))).toSorted((a, b) => b.timestamp - a.timestamp)
 
-export async function generateMetadata({ params }: { params: Promise<{ tag: string }> }) {
+export const generateMetadata = async ({ params }: { params: Promise<{ tag: string }> }): Promise<Metadata> => {
   const { tag } = await params
   const filteredPosts = getFilteredPosts(tag)
   if (filteredPosts.length < 1) notFound()

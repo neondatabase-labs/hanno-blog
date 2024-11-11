@@ -1,11 +1,12 @@
 import { Badge } from '@/components/ui/badge'
 import config from '@/lib/config'
 import { allBlogs } from 'content-collections'
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+export const generateMetadata = async ({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> => {
   const { slug } = await params
   const blog = allBlogs.find((blog) => blog._meta.path.split('/').pop() === slug)
   if (!blog) notFound()
