@@ -1,5 +1,6 @@
 import config from '@/lib/config'
 import Link from 'next/link'
+import { siGithub } from 'simple-icons'
 
 export default function () {
   return (
@@ -8,7 +9,14 @@ export default function () {
         <Link href="/">
           <img src={config.logo} width={158} height={48} className="h-[30px] w-auto" alt="Neon Logo" />
         </Link>
-        <p className="mt-4 text-center text-sm text-gray-500 lg:mt-0 lg:text-right">Copyright © {new Date().getFullYear()}. All rights reserved.</p>
+        <a
+          target="_blank"
+          href="https://github.com/neondatabase-labs/hanno-blog"
+          className="text-gray-400 hover:text-white fill-gray-400 hover:fill-white flex flex-row items-center gap-x-3 group"
+        >
+          <svg width="20px" dangerouslySetInnerHTML={{ __html: siGithub.svg }} />
+          <span>View Source</span>
+        </a>
       </div>
     </footer>
   )

@@ -52,9 +52,6 @@ importers:
       core-js:
         specifier: ^3.39.0
         version: 3.39.0
-      lucide-react:
-        specifier: ^0.454.0
-        version: 0.454.0(react@19.0.0-rc-4d577fd2-20241104)
       mdast-util-from-markdown:
         specifier: ^2.0.2
         version: 2.0.2
@@ -76,6 +73,9 @@ importers:
       resend:
         specifier: 4.0.0
         version: 4.0.0(react-dom@19.0.0-rc-4d577fd2-20241104(react@19.0.0-rc-4d577fd2-20241104))(react@19.0.0-rc-4d577fd2-20241104)
+      simple-icons:
+        specifier: ^13.16.0
+        version: 13.16.0
     devDependencies:
       '@netlify/plugin-nextjs':
         specifier: ^5.8.1
@@ -1946,11 +1946,6 @@ packages:
   lru-cache@5.1.1:
     resolution: { integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w== }
 
-  lucide-react@0.454.0:
-    resolution: { integrity: sha512-hw7zMDwykCLnEzgncEEjHeA6+45aeEzRYuKHuyRSOPkhko+J3ySGjGIzu+mmMfDFG1vazHepMaYFYHbTFAZAAQ== }
-    peerDependencies:
-      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
-
   marked@7.0.4:
     resolution: { integrity: sha512-t8eP0dXRJMtMvBojtkcsA7n48BkauktUKzfkPSCq85ZMTJ0v76Rke4DYz01omYpPTUh4p/f7HePgRo3ebG8+QQ== }
     engines: { node: '>= 16' }
@@ -2511,6 +2506,10 @@ packages:
   signal-exit@4.1.0:
     resolution: { integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw== }
     engines: { node: '>=14' }
+
+  simple-icons@13.16.0:
+    resolution: { integrity: sha512-aMg1efZ0IvYPKdvqUW0woVGSJwb199y9z7j1+6D5zPMn95eMQN0xzKAHefsqQW2K/5LwfgtFK3Gxn9n1eafX0A== }
+    engines: { node: '>=0.12.18' }
 
   simple-swizzle@0.2.2:
     resolution: { integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg== }
@@ -4353,10 +4352,6 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lucide-react@0.454.0(react@19.0.0-rc-4d577fd2-20241104):
-    dependencies:
-      react: 19.0.0-rc-4d577fd2-20241104
-
   marked@7.0.4: {}
 
   md-to-react-email@5.0.2(react@19.0.0-rc-4d577fd2-20241104):
@@ -4982,6 +4977,8 @@ snapshots:
   signal-exit@3.0.7: {}
 
   signal-exit@4.1.0: {}
+
+  simple-icons@13.16.0: {}
 
   simple-swizzle@0.2.2:
     dependencies:
