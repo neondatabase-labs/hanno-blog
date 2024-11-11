@@ -34,7 +34,7 @@ export default function RootLayout({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col">{children}</div>
         <section className="mt-12 py-12 px-8 flex flex-col items-center border-t border-white/10 text-white" id="subscribe-form">
           <h2 className="text-4xl font-medium">
-            Subscribe to <span className="text-green-400">{config.name}'s News</span>
+            Subscribe to <span className="text-brand">{config.name}'s News</span>
           </h2>
           <p className="mt-2 mb-4 text-gray-400">Get insider access to {config.name}'s latest news and events</p>
           <SubscribeForm />

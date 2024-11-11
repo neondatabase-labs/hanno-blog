@@ -21,7 +21,7 @@ export default function () {
         </div>
         <Link
           href="#subscribe-form"
-          className="inline-flex items-center justify-center whitespace-nowrap font-medium hover:bg-[#00e5bf] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow h-9 bg-[#00e599] text-black text-sm px-4 py-2 rounded-full"
+          className="inline-flex items-center justify-center whitespace-nowrap font-medium hover:bg-[#00e5bf] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow h-9 bg-brand text-black text-sm px-4 py-2 rounded-full"
         >
           Subscribe
         </Link>

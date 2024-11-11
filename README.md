@@ -1,10 +1,24 @@
 # Hanno Blog
 
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/neondatabase-labs/hanno-blog&env=DATABASE_URL,RESEND_API_KEY)
+## 1-click Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/neondatabase-labs/hanno-blog#DATABASE_URL&RESEND_API_KEY)
-
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/neondatabase-labs/hanno-blog)
+<div style="display: flex; flex-direction: row;">
+    <div style="margin: 10px;">
+        <a href="https://vercel.com/new/clone?repository-url=https://github.com/neondatabase-labs/hanno-blog&env=DATABASE_URL,RESEND_API_KEY" target="_blank">
+            <img src="https://vercel.com/button" width="103" height="32" />
+        </a>
+    </div>
+    <div style="margin: 10px;">
+        <a href="https://app.netlify.com/start/deploy?repository=https://github.com/neondatabase-labs/hanno-blog#DATABASE_URL&RESEND_API_KEY" target="_blank">
+            <img src="https://www.netlify.com/img/deploy/button.svg" width="179" height="32" style="height: 30px; width: auto;" />
+        </a>
+    </div>
+    <div style="margin: 10px;">
+        <a href="https://render.com/deploy?repo=https://github.com/neondatabase-labs/hanno-blog" target="_blank">
+            <img src="https://render.com/images/deploy-to-render-button.svg" width="153" height="40" style="height: 30px; width: auto;" />
+        </a>
+    </div>
+</div>
 
 ## Setup
 

@@ -21,7 +21,7 @@ export default function () {
         <button
           type="submit"
           aria-label="Subscribe"
-          className="absolute inset-y-2 right-2 rounded-[80px] font-bold leading-none text-black transition-colors duration-200 sm:px-5 xs:flex xs:h-10 xs:w-10 xs:items-center xs:justify-center xs:px-0 h-10 px-7 py-3 bg-[#00e599] hover:bg-[#00FFAA]"
+          className="absolute inset-y-2 right-2 rounded-[80px] font-bold leading-none text-black transition-colors duration-200 sm:px-5 xs:flex xs:h-10 xs:w-10 xs:items-center xs:justify-center xs:px-0 h-10 px-7 py-3 bg-brand"
         >
           <span className="xs:hidden">Subscribe</span>
           <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill="none" viewBox="0 0 24 24" className="hidden h-6 w-6 xs:block">

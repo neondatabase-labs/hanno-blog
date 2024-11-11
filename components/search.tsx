@@ -28,7 +28,7 @@ export default function () {
             name="query"
             autoComplete="off"
             placeholder="Search"
-            className="w-full appearance-none rounded-[50px] border bg-black pl-9 placeholder:text-white focus:outline-none h-10 border-[#00e599] text-white text-xs"
+            className="w-full appearance-none rounded-[50px] border bg-black pl-9 placeholder:text-white focus:outline-none h-10 border-brand text-white text-xs"
           />
         </div>
       </DialogTrigger>
