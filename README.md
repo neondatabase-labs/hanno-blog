@@ -14,7 +14,7 @@ A blog template (by [Neon](https://neon.tech)) that is fully customizable from a
 
 ## Demo
 
-Video
+https://github.com/user-attachments/assets/51d289da-8a56-49c0-a0bd-98c5ee60fded
 
 ## One-click Deploy
 
