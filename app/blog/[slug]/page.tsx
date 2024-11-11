@@ -55,6 +55,7 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
         <Image
           width={2400}
           height={1350}
+          priority={true}
           className="mt-8"
           alt={blog.title}
           placeholder="blur"
