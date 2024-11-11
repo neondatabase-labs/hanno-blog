@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: hanno-blog
+    runtime: node
+    plan: free
+    buildCommand: pnpm install --prod=false; pnpm build
+    startCommand: pnpm start
+    autoDeploy: false
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: RESEND_API_KEY
+        sync: false
