@@ -59,3 +59,16 @@ export default async function TagPosts({ params }: { params: Promise<{ tag: stri
     </div>
   )
 }
+
+export function generateStaticParams() {
+  return [
+    ...new Set(
+      allBlogs
+        .map((i) => i.tag)
+        .flat()
+        .filter(Boolean),
+    ),
+  ].map((tag) => ({
+    tag,
+  }))
+}
