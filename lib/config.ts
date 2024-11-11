@@ -9,4 +9,5 @@ export default {
   x: 'https://twitter.com/neondatabase/',
   yt: 'https://www.youtube.com/channel/UCoMzQTJSIr7-RU1QbomQI2w',
   discord: 'https://discord.gg/92vNTzKDGp',
+  brand: '#00e599',
 }

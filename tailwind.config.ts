@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import templateConfig from './lib/config'
 
 const config: Config = {
   darkMode: ['class'],
@@ -6,7 +7,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brand: '#00e599',
+        brand: templateConfig.brand,
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
