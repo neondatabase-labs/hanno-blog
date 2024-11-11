@@ -18,10 +18,13 @@ export const generateMetadata = async ({ params }: { params: Promise<{ tag: stri
   return {
     title: `Tag: ${tag} |  ${config.title}`,
     description: `Explore the latest articles and insights related to ${tag} on the ${config.title}.`,
+    alternates: {
+      canonical: new URL('/blog/tag' + tag, config.url),
+    },
     openGraph: {
       title: `Tag: ${tag} |  ${config.title}`,
       description: `Explore the latest articles and insights related to ${tag} on the ${config.title}.`,
-      url: new URL('/blog/tag' + tag, config.url).toString(),
+      url: new URL('/blog/tag' + tag, config.url),
     },
     twitter: {
       card: 'summary_large_image',

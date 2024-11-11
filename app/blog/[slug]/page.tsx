@@ -13,6 +13,9 @@ export const generateMetadata = async ({ params }: { params: Promise<{ slug: str
   return {
     title: blog.title,
     description: blog.summary,
+    alternates: {
+      canonical: new URL(`/blog/${slug}`, config.url),
+    },
     openGraph: {
       title: blog.title,
       description: blog.summary,
