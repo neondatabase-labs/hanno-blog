@@ -6,7 +6,7 @@ export default function () {
     <header className="border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <Link href="/">
-          <img src={config.logo} width={158} height={48} className="h-[30px] w-auto" alt="Neon Logo" />
+          <img loading="lazy" decoding="async" src={config.logo} width={158} height={48} className="h-[30px] w-auto" alt="Neon Logo" />
         </Link>
         <div className="hidden md:flex flex-row items-center gap-x-3">
           <a
