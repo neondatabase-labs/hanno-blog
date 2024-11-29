@@ -8,6 +8,8 @@ import 'core-js/features/array/to-sorted'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
+const btoa = (str: string) => Buffer.from(str).toString('base64')
+
 const getFilteredPosts = (tag: string) =>
   (tag === 'all' ? allBlogs : allBlogs.filter((blog) => blog.tag.toLowerCase().includes(tag.toLowerCase()))).toSorted((a, b) => b.timestamp - a.timestamp)
 
@@ -16,20 +18,22 @@ export const generateMetadata = async ({ params }: { params: Promise<{ tag: stri
   const filteredPosts = getFilteredPosts(tag)
   if (filteredPosts.length < 1) notFound()
   return {
-    title: `Tag: ${tag} |  ${config.title}`,
+    title: `Tag: ${tag} | ${config.title}`,
     description: `Explore the latest articles and insights related to ${tag} on the ${config.title}.`,
     alternates: {
       canonical: new URL('/blog/tag' + tag, config.url),
     },
     openGraph: {
-      title: `Tag: ${tag} |  ${config.title}`,
+      title: `Tag: ${tag} | ${config.title}`,
       description: `Explore the latest articles and insights related to ${tag} on the ${config.title}.`,
       url: new URL('/blog/tag' + tag, config.url),
+      images: `https://neon.tech/docs/og?title=${btoa(`Tag: ${tag}`)}&breadcrumb=${btoa(config.title)}`,
     },
     twitter: {
       card: 'summary_large_image',
       title: `Tag: ${tag} | ${config.title}`,
       description: `Explore the latest articles and insights related to ${tag} on the ${config.title}.`,
+      images: `https://neon.tech/docs/og?title=${btoa(`Tag: ${tag}`)}&breadcrumb=${btoa(config.title)}`,
     },
   }
 }
