@@ -2,9 +2,11 @@
 
 import ContactTemplate from '@/components/email-templates'
 import config from '@/lib/config'
-import { neon } from '@neondatabase/serverless'
+import { neon, neonConfig } from '@neondatabase/serverless'
 import { ReactElement } from 'react'
 import { Resend } from 'resend'
+
+neonConfig.poolQueryViaFetch = true
 
 export async function createPost(_: any, formData: FormData) {
   try {

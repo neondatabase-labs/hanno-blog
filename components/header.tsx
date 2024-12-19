@@ -9,6 +9,9 @@ export default function () {
           <img loading="lazy" decoding="async" src={config.logo} width={158} height={48} className="h-[30px] w-auto" alt="Neon Logo" />
         </Link>
         <div className="hidden md:flex flex-row items-center gap-x-3">
+          <a target="_blank" aria-label="Deploy to Cloudflare Workers" href="https://deploy.workers.cloudflare.com/?url=https://github.com/neondatabase-labs/hanno-blog">
+            <img alt="Deploy to Cloudflare Workers" loading="lazy" decoding="async" src="https://deploy.workers.cloudflare.com/button" width="146.4" height="31.2" />
+          </a>
           <a
             aria-label="Deploy to Vercel"
             href="https://vercel.com/new/clone?repository-url=https://github.com/neondatabase-labs/hanno-blog&env=DATABASE_URL,RESEND_API_KEY"

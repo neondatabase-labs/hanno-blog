@@ -2,9 +2,6 @@ name: Create Hybrid Search
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
 
 jobs:
   create-hybrid-search:
@@ -18,11 +15,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Install pnpm
-        run: npm install -g pnpm
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
       - name: Run hybrid search
-        run: pnpm run hybrid
+        run: npm run hybrid
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}

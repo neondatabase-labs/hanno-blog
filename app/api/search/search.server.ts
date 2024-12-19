@@ -1,7 +1,9 @@
 'use server'
 
 import { generateEmbedding } from '@/lib/embedding'
-import { neon } from '@neondatabase/serverless'
+import { neon, neonConfig } from '@neondatabase/serverless'
+
+neonConfig.poolQueryViaFetch = true
 
 export async function searchBlog(_: any, formData: FormData) {
   try {

@@ -1,10 +1,12 @@
-import { neon } from '@neondatabase/serverless'
+import { neon, neonConfig } from '@neondatabase/serverless'
 import { execSync } from 'child_process'
 import 'dotenv/config'
 import fs from 'fs'
 import frontmatter from 'gray-matter'
 import path from 'path'
 import { generateEmbedding } from './lib/embedding'
+
+neonConfig.poolQueryViaFetch = true
 
 const getChangedMarkdownFiles = () => {
   try {

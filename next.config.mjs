@@ -1,7 +1,18 @@
 import { withContentCollections } from '@content-collections/next'
-import type { NextConfig } from 'next'
+import { readFileSync, writeFileSync } from 'fs'
+import { join } from 'path'
 
-const nextConfig: NextConfig = {
+const prependLine = "export const runtime = 'edge'"
+const appLayoutPath = join(process.cwd(), 'app', 'layout.tsx')
+
+const content = readFileSync(appLayoutPath, 'utf-8')
+if (process.env.DEPLOYMENT_PLATFORM === 'workers') {
+  if (!content.includes(prependLine)) writeFileSync(appLayoutPath, prependLine + content)
+} else {
+  if (content.includes(prependLine)) writeFileSync(appLayoutPath, content.replace(prependLine, ''))
+}
+
+const nextConfig = {
   images: {
     remotePatterns: [
       {
@@ -16,10 +27,11 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  async rewrites() {
+  async redirects() {
     return [
       {
         source: '/',
+        permanent: true,
         destination: '/blog/tag/all',
       },
     ]

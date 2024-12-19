@@ -5,6 +5,8 @@
     "build": "next build",
     "start": "next start",
     "hybrid": "tsx hybrid.tsx",
+    "pages:build": "DEPLOYMENT_PLATFORM='workers' npx @cloudflare/next-on-pages",
+    "pages:deploy": "wrangler pages deploy",
     "fmt": "prettier --write '**/*' --ignore-unknown"
   },
   "dependencies": {
@@ -29,10 +31,11 @@
     "react": "19.0.0-rc-4d577fd2-20241104",
     "react-dom": "19.0.0-rc-4d577fd2-20241104",
     "react-email": "^3.0.2",
-    "resend": "4.0.0",
+    "resend": "4.0.1",
     "simple-icons": "^13.16.0"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.7",
     "@netlify/plugin-nextjs": "^5.8.1",
     "@tailwindcss/typography": "^0.5.15",
     "@types/node": "^20.17.6",
@@ -48,7 +51,7 @@
     "tailwindcss": "^3.4.14",
     "tailwindcss-animate": "^1.0.7",
     "tsx": "^4.19.2",
-    "typescript": "^5.6.3"
-  },
-  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
+    "typescript": "^5.6.3",
+    "wrangler": "^3.98.0"
+  }
 }

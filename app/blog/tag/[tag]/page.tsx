@@ -70,12 +70,13 @@ export default async function TagPosts({ params }: { params: Promise<{ tag: stri
 
 export function generateStaticParams() {
   return [
-    ...new Set(
-      allBlogs
-        .map((i) => i.tag)
+    ...new Set([
+      'all',
+      ...allBlogs
+        .map((i) => i.tag.toLowerCase())
         .flat()
         .filter(Boolean),
-    ),
+    ]),
   ].map((tag) => ({
     tag,
   }))

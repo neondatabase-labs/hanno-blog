@@ -35,6 +35,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# cloudflare
+.wrangler
+.worker-next
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
