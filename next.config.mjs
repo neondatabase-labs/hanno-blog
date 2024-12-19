@@ -2,7 +2,7 @@ import { withContentCollections } from '@content-collections/next'
 import { readFileSync, writeFileSync } from 'fs'
 import { join } from 'path'
 
-const prependLine = "export const runtime = 'edge'"
+const prependLine = "export const runtime = 'edge'\n"
 const appLayoutPath = join(process.cwd(), 'app', 'layout.tsx')
 
 const content = readFileSync(appLayoutPath, 'utf-8')
