@@ -40,6 +40,9 @@ https://github.com/user-attachments/assets/51d289da-8a56-49c0-a0bd-98c5ee60fded
 You can deploy this template to Vercel/Netlify/Render with the buttons below:
 
 <div>
+    <a target="_blank" href="https://deploy.workers.cloudflare.com/?url=https://github.com/neondatabase-labs/hanno-blog">
+        <img src="https://deploy.workers.cloudflare.com/button" width="146.4" height="31.2" />
+    </a>
     <a href="https://vercel.com/new/clone?repository-url=https://github.com/neondatabase-labs/hanno-blog&env=DATABASE_URL,RESEND_API_KEY" target="_blank">
         <img src="https://vercel.com/button" width="103" height="32" />
     </a>

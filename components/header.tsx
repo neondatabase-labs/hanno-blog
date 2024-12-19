@@ -13,9 +13,9 @@ export default function () {
             <img alt="Deploy to Cloudflare Workers" loading="lazy" decoding="async" src="https://deploy.workers.cloudflare.com/button" width="146.4" height="31.2" />
           </a>
           <a
+            target="_blank"
             aria-label="Deploy to Vercel"
             href="https://vercel.com/new/clone?repository-url=https://github.com/neondatabase-labs/hanno-blog&env=DATABASE_URL,RESEND_API_KEY"
-            target="_blank"
           >
             <img alt="Deploy to Vercel" loading="lazy" decoding="async" src="https://vercel.com/button" width="103" height="32" />
           </a>
