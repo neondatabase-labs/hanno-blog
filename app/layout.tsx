@@ -3,7 +3,10 @@ import Header from '@/components/header'
 import SubscribeForm from '@/components/subscribe'
 import config from '@/lib/config'
 import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import './globals.css'
+
+const geist = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: config.title,
@@ -28,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={geist.className}>
       <body className="bg-black antialiased">
         <Header />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col">{children}</div>
