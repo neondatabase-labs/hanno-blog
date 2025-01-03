@@ -30,7 +30,7 @@
     "next": "^15.0.2",
     "react": "19.0.0-rc-4d577fd2-20241104",
     "react-dom": "19.0.0-rc-4d577fd2-20241104",
-    "react-email": "^3.0.2",
+    "react-email": "^3.0.4",
     "resend": "4.0.1",
     "simple-icons": "^13.16.0"
   },
