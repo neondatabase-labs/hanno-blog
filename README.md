@@ -1,3 +1,5 @@
+<img width="250px" src="https://neon.tech/brand/neon-logo-dark-color.svg" />
+
 # Hanno Blog
 
 <p>
