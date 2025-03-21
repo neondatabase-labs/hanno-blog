@@ -27,7 +27,7 @@
     "core-js": "^3.39.0",
     "mdast-util-from-markdown": "^2.0.2",
     "mdast-util-to-string": "^4.0.0",
-    "next": "^15.0.2",
+    "next": "^15.2.3",
     "react": "19.0.0-rc-4d577fd2-20241104",
     "react-dom": "19.0.0-rc-4d577fd2-20241104",
     "react-email": "^3.0.4",
